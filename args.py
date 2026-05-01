@@ -12,9 +12,9 @@ def get_args():
     parser.add_argument('--out_dir', type=str, default='./sessions')
     
 
-    parser.add_argument('--batch_size', type=int, default=8, choices=[8, 16, 32, 64])
-    parser.add_argument('--epochs', type=int, default=30) #change epoch 100-50 for short
-    parser.add_argument('--lr', type=float, default=1e-4) #down learning rate 0,001-0,0001
-    parser.add_argument('--wd', type=float, default=5e-4)
+    parser.add_argument('--batch_size', type=int, default=16, choices=[8, 16, 32, 64])
+    parser.add_argument('--epochs', type=int, default=50) 
+    parser.add_argument('--lr', type=float, default=1e-5) 
+    parser.add_argument('--wd', type=float, default=5e-5)
 
     return parser.parse_args()

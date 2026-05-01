@@ -2,3 +2,6 @@ data/images/*
 data/labels/*
 sessions/*
 detected_images/*
+__pycache__/*
+test_images/*
+test_results/*

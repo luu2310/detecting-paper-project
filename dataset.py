@@ -17,7 +17,7 @@ class ObjDetectionDataset(torch.utils.data.Dataset):
         row = self.df.iloc[idx]
 
         img = Image.open(row["image_path"]).convert("RGB")
-        # img = ImageOps.exif_transpose(img)  
+        img = ImageOps.exif_transpose(img)  
         w, h = img.size
 
         boxes, labels = [], []

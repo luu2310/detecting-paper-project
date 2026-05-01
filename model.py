@@ -10,7 +10,6 @@ from torchvision.models.detection import (
 
 def build_model(backbone: str, num_classes: int):
     if backbone == 'fasterrcnn_resnet50_fpn':
-        # Dùng weights chuẩn DEFAULT, không cần pretrained=True nữa
         weights = FasterRCNN_ResNet50_FPN_Weights.DEFAULT
         model = torchvision.models.detection.fasterrcnn_resnet50_fpn(weights=weights)
 
